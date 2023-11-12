@@ -1,0 +1,28 @@
+<h1>Account List</h1>
+<div class="table-responsive small">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Password</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let account of accounts ; index as i">
+          <th>{{account.id}}</th>
+          <th>{{account.name}}</th>
+          <th>{{account.email}}</th>
+          <th>{{account.password}}</th>
+          <th class="mx-auto w-36 "> 
+            <button class="border-2 rounded-md text-white font-semibold bg-green-500 p-1 mr-2"  routerLink="/admin/account/{{account.id}}/edit" >Update</button>
+            <button class="border-2 rounded-md text-white font-semibold bg-red-500 p-1 mr-2" (click)="removeItem(account.id!)">Delete</button>
+            <!-- -->
+            <!--  -->
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>

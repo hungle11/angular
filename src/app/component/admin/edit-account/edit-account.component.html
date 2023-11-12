@@ -1,0 +1,16 @@
+<h1 class="text-center mb-4">Update Account</h1>
+<form (ngSubmit)="onHandleSubmit()" [formGroup]="productForm">
+            <div>
+                <label class="text-green-800 font-bold" for="name">Name</label>
+                <input class="border" formControlName="name" type="text" id="name" name="name">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="price">email</label>
+                <input class="border" formControlName="email" type="text" id="email" name="email">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="description">password</label>
+                <input class="border" formControlName="password" id="password" name="password">
+            </div>
+    <input class="input bg-green-500 font-bold text-white p-2 rounded-lg text-center" type="submit" value="Submit">
+</form>

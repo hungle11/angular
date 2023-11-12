@@ -1,0 +1,133 @@
+.banner_menu {
+    background-image: url(https://templatemo.com/templates/templatemo_572_designer/assets/images/banner-bg.jpg);
+    background-size: cover;
+    height: 821px;
+    z-index: 1;
+    position: relative;
+}
+
+
+
+.text_menu a {
+    font-weight: 600;
+
+}
+
+.text_menu :hover {
+    color: red
+}
+
+.text_banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 767px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.box_search {
+    z-index: 5;
+    margin: -115px;
+    position: relative;
+    border: 1px solid black;
+    width: 70%;
+    background-color: white;
+}
+
+.text_search {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input_search {
+    width: 70%;
+    border: 1px gray solid;
+
+}
+
+::placeholder {
+    text-align: center;
+    letter-spacing: 20px
+}
+
+.btn_search {
+    background-color: #ff565b;
+    border: 2px #ff565b solid;
+    width: 70%;
+    font-weight: 700;
+}
+
+.btn_search :hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.text_shop {
+    font-weight: 700;
+}
+
+.interior {
+    border-bottom: 1px solid gray;
+    font-weight: 700;
+}
+
+.janury {
+    margin: 10px 0px 0px 0px;
+}
+
+.textWaterfront {
+    font-weight: 700;
+}
+
+.textWaterfront:hover {
+    color: #ff565b;
+
+}
+
+.janury1 {
+    margin: 10px 0px 0px 0px;
+    font-weight: 700;
+
+}
+
+.janury1:hover {
+    color: #ff565b;
+}
+
+.text_box2 {
+    width: 600px;
+}
+
+.btn_shopnow {
+    font-weight: 600;
+}
+
+.btn_shopnow :hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.img_shopnow {
+    width: 60%;
+    height: max-content;
+
+}
+
+.text_footer {
+    width: 550px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.Copyright {
+    font-weight: 700;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}

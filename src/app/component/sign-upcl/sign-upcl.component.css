@@ -1,0 +1,21 @@
+.add-product-form {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+.sign {
+    width: 100%;
+}
+
+.divform {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+
+}

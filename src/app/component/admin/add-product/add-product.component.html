@@ -1,0 +1,45 @@
+<h1 class="text-center">Add Product</h1>
+<form class="add-product-form" (ngSubmit)="onHandleSubmit()" [formGroup]="productForm">
+    <div class="flex justify-center gap-14">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" formControlName="name" id="name" name="name" required>
+
+            <label for="price">Price:</label>
+            <input type="text" formControlName="price" id="price" name="price" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" formControlName="description" name="description" required></textarea>
+
+            <label for="level">Level:</label>
+            <input type="text" formControlName="level" id="level" name="level" required>
+           
+        
+            <label for="bedrooms">Bedrooms:</label>
+            <input type="text" formControlName="bedrooms" id="bedrooms" name="bedrooms" required>
+        </div>
+        <div>
+            <label for="bathrooms">Bathrooms:</label>
+            <input type="text" formControlName="bathrooms" id="bathrooms" name="bathrooms" required>
+          
+            <label for="area">Area:</label>
+            <input type="text" formControlName="area" id="area" name="area" required>
+          
+            <label for="floor">Floor:</label>
+            <input type="text" formControlName="floor" id="floor" name="floor" required>
+          
+            <label for="parking">Parking:</label>
+            <input type="text" formControlName="parking" id="parking" name="parking" required>
+          
+            <label for="imageUrl">Image URL:</label>
+            <input type="url" formControlName="imageUrl"  id="imageUrl" name="imageUrl" required>
+        </div>
+    </div>
+    
+  
+
+
+   
+  
+    <button type="submit">Add Product</button>
+  </form>

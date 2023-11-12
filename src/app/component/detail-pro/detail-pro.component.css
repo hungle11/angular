@@ -1,0 +1,80 @@
+.text_banner {
+    background-image: url(https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/page-heading-bg.jpg);
+    background-size: cover;
+
+}
+
+.text_banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 330px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 900;
+}
+
+.text_menu a {
+    font-weight: 600;
+
+}
+
+.text_menu a:hover {
+    color: red
+}
+
+.img_detail {
+    height: 530px;
+}
+
+.bder {
+    border-top: 0.4px gray solid;
+}
+
+.if_border {
+    box-shadow: 0px 0px 10px 5px;
+}
+
+.text_detail {
+    width: 70%;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.janury1:hover {
+    color: #ff565b;
+}
+
+.text_box2 {
+    width: 600px;
+}
+
+.btn_shopnow {
+    font-weight: 600;
+}
+
+.btn_shopnow :hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.img_shopnow {
+    width: 60%;
+    height: max-content;
+
+}
+
+.text_footer {
+    width: 550px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.Copyright {
+    font-weight: 700;
+}
+
+.bg_luxury {
+    background-color: #f35525;
+}

@@ -1,0 +1,170 @@
+<body>
+   
+
+
+        <div class="mb-5">
+            <p class="text-4xl text_shop text-black mt-64 container">EXPLORE SOME OF OUR LATEST</p>
+            <p class="container text_shop text-5xl text-red-500">---- INTERIOR DESIGN WORK.</p>
+        </div>
+
+
+
+ <div class="container test_grid  justify-center gap-32" >
+    <div *ngFor="let product of products">
+        <img class="rounded-md mb-3" [src]="product.imageUrl" alt="">
+        <div class="flex justify-between gap-16 mb-4">
+            <div class="border bg_luxury w-full text-center rounded-lg">
+                <p class="w-32 text-center mt-3">{{product.level}}</p>
+            </div>
+            <p class="text-xl mt-3 text-orange-600 font-bold w-full">${{product.price}}</p>
+        </div>
+        <p class="text-2xl font-bold mb-3">{{product.name}}</p>
+        <div class="flex gap-4 font-medium mb-2">
+            <p>Bedrooms: {{product.bedrooms}}</p>
+            <p>Bathrooms: {{product.bathrooms}}</p>
+        </div>
+        <div class=" flex gap-2 font-medium mb-2">
+            <p>Area: {{product.area}}m2</p>
+            <p>Floor: {{product.floor}}</p>
+            <p>Parking: {{product.parking}}spots</p>
+        </div>
+        <div class="area mb-3"></div>
+        <div class="schedule btn_detail border rounded-lg text-center p-2">
+            <a class="a text-black"  routerLink="/detail/{{product.id}}"><p class="mt-3">Schedule a visit</p></a>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div>
+        <img class="rounded-md mb-3" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-02.jpg" alt="">
+        <div class="flex justify-between mb-4">
+            <div class="border bg_luxury p-1 w-auto text-center rounded-lg">
+                <p>Luxury villa</p>
+            </div>
+            <p class="text-xl text-orange-600 font-bold">$1.180.000</p>
+        </div>
+        <p class="text-2xl font-bold mb-3">54 Mid Street Florida, OR 27001</p>
+        <div class="flex gap-6 font-medium mb-3">
+            <p>Bedrooms: 6</p>
+            <p>Bathrooms: 5</p>
+        </div>
+        <div class=" flex gap-6 font-medium mb-4">
+            <p>Area: 450m2</p>
+            <p>Floor: 3</p>
+            <p>Parking: 8 spots</p>
+        </div>
+        <div class="area mb-3"></div>
+        <div class="schedule btn_detail border rounded-lg text-center p-2">
+            <a href="detail"><p>Schedule a visit</p></a>
+        </div>
+    </div>
+    <div>
+        <img class="rounded-md mb-3" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-05.jpg" alt="">
+        <div class="flex justify-between mb-4">
+            <div class="border bg_luxury p-1 w-auto text-center rounded-lg">
+                <p>Penthouse</p>
+            </div>
+            <p class="text-xl text-orange-600 font-bold">$925.600</p>
+        </div>
+        <p class="text-2xl font-bold mb-3">34 Beach Street Miami, OR 42680</p>
+        <div class="flex gap-6 font-medium mb-3">
+            <p>Bedrooms: 4</p>
+            <p>Bathrooms: 4</p>
+        </div>
+        <div class=" flex gap-6 font-medium mb-4">
+            <p>Area: 180m2</p>
+            <p>Floor: 38th</p>
+            <p>Parking: 2 cars</p>
+        </div>
+        <div class="area mb-3"></div>
+        <div class="schedule btn_detail border rounded-lg text-center p-2">
+            <a href="detail"><p>Schedule a visit</p></a>
+        </div>
+    </div>
+
+
+
+    <div>
+        <img class="rounded-md mb-3" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-04.jpg" alt="">
+        <div class="flex justify-between mb-4">
+            <div class="border bg_luxury p-1 w-auto text-center rounded-lg">
+                <p>Apartment</p>
+            </div>
+            <p class="text-xl text-orange-600 font-bold">$584.500</p>
+        </div>
+        <p class="text-2xl font-bold mb-3">12 New Street Miami, OR 12650</p>
+        <div class="flex gap-6 font-medium mb-3">
+            <p>Bedrooms: 4</p>
+            <p>Bathrooms: 3</p>
+        </div>
+        <div class=" flex gap-6 font-medium mb-4">
+            <p>Area: 125m2</p>
+            <p>Floor: 25th</p>
+            <p>Parking: 2 cars</p>
+        </div>
+        <div class="area mb-3"></div>
+        <div class="schedule btn_detail border rounded-lg text-center p-2">
+            <a href="detail"><p>Schedule a visit</p></a>
+        </div>
+    </div>
+    <div>
+        <img class="rounded-md mb-3" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-03.jpg" alt="">
+        <div class="flex justify-between mb-4">
+            <div class="border bg_luxury p-1 w-auto text-center rounded-lg">
+                <p>Luxury villa</p>
+            </div>
+            <p class="text-xl text-orange-600 font-bold">$1.460.000</p>
+        </div>
+        <p class="text-2xl font-bold mb-3">26 Old Street Miami, OR 38540</p>
+        <div class="flex gap-6 font-medium mb-3">
+            <p>Bedrooms: 5</p>
+            <p>Bathrooms: 4</p>
+        </div>
+        <div class=" flex gap-6 font-medium mb-4">
+            <p>Area: 225m2</p>
+            <p>Floor: 3</p>
+            <p>Parking: 10 spots</p>
+        </div>
+        <div class="area mb-3"></div>
+        <div class="schedule btn_detail border rounded-lg text-center p-2">
+            <a href="detail"><p>Schedule a visit</p></a>
+        </div>
+    </div>
+    <div>
+        <img class="rounded-md mb-3" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/property-06.jpg" alt="">
+        <div class="flex justify-between mb-4">
+            <div class="border bg_luxury p-1 w-auto text-center rounded-lg">
+                <p>Modern Condo</p>
+            </div>
+            <p class="text-xl text-orange-600 font-bold">$450.000</p>
+        </div>
+        <p class="text-2xl font-bold mb-3">22 New Street Portland, OR 16540</p>
+        <div class="flex gap-6 font-medium mb-3">
+            <p>Bedrooms: 3</p>
+            <p>Bathrooms: 2</p>
+        </div>
+        <div class=" flex gap-6 font-medium mb-4">
+            <p>Area: 165m2</p>
+            <p>Floor: 26th</p>
+            <p>Parking: 3 cars</p>
+        </div>
+        <div class="area mb-3"></div>
+        <div class="schedule btn_detail border rounded-lg text-center p-2">
+            <a href="detail"><p>Schedule a visit</p></a>
+        </div>
+    </div> -->
+</div>
+
+
+
+
+<div class="border mt-32 mb-32"></div>
+
+
+
+        <!-- footer -->
+       
+
+</body>

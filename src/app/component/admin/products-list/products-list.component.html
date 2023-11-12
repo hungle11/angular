@@ -1,0 +1,40 @@
+<h2>Products list</h2>
+        <div class="table-responsive small">
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Level</th>
+                <th scope="col">Bedrooms</th>
+                <th scope="col">Bathrooms</th>
+                <th scope="col">Area(m2)</th>
+                <th scope="col">Floor</th>
+                <th scope="col">Parking</th>
+                <th scope="col">image</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of products ; index as i">
+                <th>{{product.id}}</th>
+                <th>{{product.name}}</th>
+                <th>${{product.price}}</th>
+                <th class="w-72">{{product.description}}</th>
+                <th>{{product.level}}</th>
+                <th>{{product.bedrooms}}</th>
+                <th class="mr-2">{{product.bathrooms}}</th>
+                <th class="mr-2">{{product.area}}</th>
+                <th>{{product.floor}}</th>
+                <th>{{product.parking}}</th>
+                <th><img class="w-96" [src]="product.imageUrl" alt=""></th>
+                <th class="mx-auto w-36 "> 
+                  <button class="border-2 rounded-md text-white font-semibold bg-green-500 p-1 mr-2" routerLink="/admin/product/{{ product.id }}/edit" >Update</button>
+                  <button class="border-2 rounded-md text-white font-semibold bg-red-500 p-1 mr-2" (click)="removeItem(product.id!)">Delete</button>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>

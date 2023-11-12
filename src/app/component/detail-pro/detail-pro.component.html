@@ -1,0 +1,161 @@
+<body>
+    <div class="banner_menu mb-20">
+       
+        <div class="container mx-auto flex justify-between menu ml-20 mb-10">
+            <div class="mt-4 ml-24 ">
+                <img src="https://templatemo.com/templates/templatemo_572_designer/assets/images/footer-logo.png" alt="">
+            </div>
+            <div class="flex gap-4 mt-4 text-white text_menu mr-44">
+                <a class="text-lg text-black" href="">Home Page</a>
+                <a class="text-lg text-black" href="shop">Shop</a>
+                <a class="text-lg text-black" href="#">About us</a>
+            </div>
+        </div>z
+
+  
+  
+        <div class=" text_banner h-96 p-4">
+           <p class="text-5xl font-bold text-white text-center flex flex-col">SINGLE PROPERTY</p>
+        </div>
+    </div>
+
+    <div class="container flex gap-28 mb-3">
+        <img *ngIf="product" class="img_detail w-2/3 rounded-xl" [src]="product.imageUrl" alt="">
+        <div class="w-1/3  border p-4 rounded-lg if_border">
+            <div class="mb-28 ">
+                <img class="float-left mr-10" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-01.png" alt="">
+                <div class="float-left">
+                    <p class="text-3xl font-bold" *ngIf="product">{{product.area}}m2</p>
+                    <p class=" text-gray-500" >Total Flat Space</p>
+                </div>
+            </div>
+
+            
+            <div class="mb-28 bder pt-4"> 
+                <img class="float-left mr-10" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-02.png" alt="">
+                <div class="float-left">
+                    <p class="text-3xl font-bold">Apparment</p>
+                    <p class=" text-gray-500">Apparment Ready</p>
+                </div>
+            </div>
+            <!-- <br><br><br><br><br> -->
+            <div class="mb-28 bder pt-4"> 
+                <img class="float-left mr-10" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-03.png" alt="">
+                <div class="float-left">
+                    <p class="text-3xl font-bold">Payment</p>
+                    <p class=" text-gray-500">Payment Process</p>
+                </div>
+            </div>
+
+
+            <div class="bder pt-4"> 
+                <img class="float-left mr-10" src="https://templatemo.com/templates/templatemo_591_villa_agency/assets/images/info-icon-04.png" alt="">
+                <div class="float-left">
+                    <p class="text-3xl font-bold">Safety</p>
+                    <p class=" text-gray-500">24/7 Under Control</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="container mt-16 mb-16">
+        <p class="text-4xl font-bold" *ngIf="product">{{product.name}}</p>
+    </div>
+    <div class="container mb-24">
+        <p class="text_detail text-xl " *ngIf="product">{{product.description}}</p>
+    </div>
+
+
+
+    <div class="container">
+        <p class="text-red-500 text-lg font-bold ">| BEST DEAL</p>
+        <div class="flex justify-between mb-20">
+            <p class="text-4xl font-bold">Find Your Best Deal <br> Right Now!</p>
+                <div class="border bg_luxury w-96 font-bold text-white text-center rounded-lg mr-10">
+                    <p class="mt-7" *ngIf="product">{{product.level}}</p>
+                </div>
+        </div>
+
+        <div class="flex gap-10 justify-between if_border rounded-lg pt-10">
+            <div class="w-1/3 ">
+                <div class="flex justify-between mb-5 gap-10">
+                    <p class="text-gray-500 text-lg ml-10">Total Flat Space</p>
+                    <p class="text-3xl font-bold mr-10" *ngIf="product">{{product.area}}m2</p>
+                </div>
+                <div  class="flex justify-between mb-5 gap-10">
+                    <p class="text-gray-500 text-lg ml-10">Floor number</p>
+                    <p class="text-3xl font-bold mr-10" *ngIf="product">{{product.floor}}</p>
+                </div>
+                <div  class="flex justify-between mb-5 gap-10">
+                    <p class="text-gray-500 text-lg ml-10">Number of rooms</p>
+                    <p class="text-3xl font-bold mr-10" *ngIf="product">{{product.bathrooms}}</p>
+                </div>
+                <div  class="flex justify-between mb-5 gap-10">
+                    <p class="text-gray-500 text-lg ml-10">Parking Available</p>
+                    <p class="text-3xl font-bold mr-10">Yes</p>
+                </div>
+                <div  class="flex justify-between mb-5 gap-10">
+                    <p class="text-gray-500 text-lg ml-10">Payment Process</p>
+                    <p class="text-3xl font-bold mr-10">Bank</p>
+                </div>
+            </div>
+            <div class="w-1/3">
+                <img class="mt-20 ml-10" *ngIf="product" [src]="product.imageUrl" alt="">
+            </div>
+            <div class="w-1/3">
+                <p class="font-bold text-2xl text-center  mr-20">All Info About Apartment</p>
+                <p class="font-bold text-lg  w-80 text-left ml-3" *ngIf="product">{{product.description}}</p>
+            </div>
+        </div>
+    </div>
+  
+
+
+
+
+    <div class="border mt-32 mb-32"></div>
+
+
+    <div class="container border-t-black mb-10">
+        <div class="float-left">
+            <img class="mb-5" src="https://templatemo.com/templates/templatemo_572_designer/assets/images/footer-logo.png" alt="">
+            <p class="text_footer mb-28">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipcingi elit, sed do eismuod larehai med at vero eos et suscipit neque rerum molestias</p>
+            <p class="Copyright mb-10">Copyright © 2022 Designer HL., Ltd. All Rights Reserved. <br/>
+                Design: Hung lee</p>
+        </div>
+        <div class="float-right flex gap-16 mr-36">
+            <div>
+                <p class="text-xl mb-4">Our Location</p>
+                <p class="mb-3 text-gray-500">Sunny Isles Beach,</p>
+                <p class="mb-3 text-gray-500">Florida 33160,</p>
+                <p class="mb-3 text-gray-500">United States</p>
+            </div>
+            <div>
+                <p class="text-xl mb-4">Customer Care</p>
+                <p class="mb-3 text-gray-500">010-020-0340</p>
+                <p class="mb-3 text-gray-500">090-080-0760</p>
+                <p class="mb-3 text-gray-500">info@company.com</p>
+            </div>
+            <div>
+                <p class="text-xl mb-4">Follow Us</p>
+                <div class="flex mb-3 gap-2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbUlEQVR4nO2Wu0rEQBhGT6OCnY2K91oLC7HTB7DwxmKtFlYa9XVcUXvRzltpYal9XPAFvIGbRZd1oxKYhTEkf/5NsrDFfjDNMGdO5pKZgU7aMGOAA9wALlAxxTV1O8BonsJh4ACoA78JxQdOgYms0hXAUwjDpQwspZXumRE0K7VHv5tmpH4Tkg/gK0auHvmIcnqfgU2gz2J7gLuIaR/SiI8U0k9gKoa/jWh/qPllNLu3GOK6gGlgBniIaF83MxkbR7mmaxbTC5QUzLYkvlaK5yxmQclcSuJHZSezFrOuZFxJ7KUQbygZTxJXBHAeXeLWuyxBTxnF3cB3DF+SwKuM4kmBv5DA/YTNcW9KIGhk0aqXNqcjiceBWgs2V01zV5+0QFxEkeDYfM9R/JZ0XNopAD85iIM+lrXSRraEO1kj9k0fqVIAXlOIX4BVMmYQOAaqCnHV3OcDWaXhDwjeUOehR0DwTDozb7T+f0Qn7ZA/M7pkIR8cDCkAAAAASUVORK5CYII=">
+                    <p>Facebook</p>
+                </div>
+               <div class="flex mb-3 gap-2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWUlEQVR4nO2WwU7CQBCGv7t4A05y5ih6EDH6Dkp8IJEnUOQhMCQ8iehD6E1NWz3IQTEb/yakobutmRoP/Mkkzc7MfpnJdLKw0T9QExgC98A7sCxoLnau3EZZ6DmQlIDlWQz0y0C/DKCpfRaBN40qzVoUavvQCHQEHGfOBj7wgxHYQU8yZ3MfONTmD+AK6AJbMvc9AhaB3MQH9iU+Arue3I5ifHfkyldpCm0BU1XgbAa05dsLVJ6rvATX3hT6ssb/Kp/TjSX4QP6pJ+ZWMYeW4FqB4XNbymn7r8FRFeCu/DNPzEQxPUvwtfxtDVLW/wzsKGZs/Tt1FNPSIMWyyQp03/p3Wmo5pPB1ctCnwB2/XpkLrceeBq6m73GBlRnnY39eG8uK7M4HvqwQfOEDN9QSa2gE1Amor+eKFdTddRqCrsIjo0rPikJT1fVccUPxVgKWKGdQpL0bUbW+AcdI0V4wAXsCAAAAAElFTkSuQmCC">
+                    <p>Instagram</p>
+                </div>
+                <div class="flex mb-3 gap-2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA20lEQVR4nO3UMUoDQRTG8V8Ey2ChSY4h5BQJgoWFSRGChaawsEqld1Ab72DtGfQAVkmRKknpCWzW5glLSBbc3QGLfPBgvo9582d4zLDXH3WGNbKStUK/CLCqcHgWtSwCZDXVTuU3LXCFl1SAaWQH+E4BmOEST6lukHwG7zjGKJfd4QivuIj1KeZlAA+5GfxmncgON/rOywDut+St8F18YRi+VTfgOvzjjt7KgJs6ANtm0I5sEv45fKMM4AMnGOeyWzTxFv4zoIN/+Q6yFIDk33W/ImSJXhFgL5v6AaUHB0iDcN4vAAAAAElFTkSuQmCC">
+                    <p>Linkedin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<!--  -->

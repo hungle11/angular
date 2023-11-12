@@ -1,0 +1,50 @@
+<h1 class="text-center mb-4">Update Product</h1>
+<form action="/your-endpoint" (ngSubmit)="onHandleSubmit()" [formGroup]="productForm">
+    <div class="flex justify-center gap-20">
+        <div>
+            <div>
+                <label class="text-green-800 font-bold" for="name">Name</label>
+                <input class="border" formControlName="name" type="text" id="name" name="name">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="price">Price</label>
+                <input class="border" formControlName="price" type="text" id="price" name="price">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="description">Description</label>
+                <textarea class="border" formControlName="description" id="description" name="description"></textarea>
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="level">Level</label>
+                <input class="border" type="text" formControlName="level" id="level" name="level">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="bedrooms">Bedrooms</label>
+                <input class="border" type="text" formControlName="bedrooms" id="bedrooms" name="bedrooms">
+            </div>
+        </div>
+        <div>
+            <div>
+                <label class="text-green-800 font-bold" for="bathrooms">Bathrooms</label>
+                <input class="border" type="text" formControlName="bathrooms" id="bathrooms" name="bathrooms">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="area">Area</label>
+                <input class="border" type="text" formControlName="area" id="area" name="area">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="floor">Floor</label>
+                <input class="border" type="text" formControlName="floor" id="floor" name="floor">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="parking">Parking</label>
+                <input class="border" type="text" formControlName="parking" id="parking" name="parking">
+            </div>
+            <div>
+                <label class="text-green-800 font-bold" for="imageUrl">Image URL</label>
+                <textarea class="border" formControlName="imageUrl" id="imageUrl" name="imageUrl"></textarea>
+            </div>
+        </div>
+    </div>
+    <input class="input bg-green-500 font-bold text-white p-2 rounded-lg text-center" type="submit" value="Submit">
+</form>
